@@ -10,7 +10,8 @@ public class Usuario {
 		private LocalDate dataNascimento;
 		private String cpf;
 		
-		public Pessoa(String nome,String sexo,String endereco,String telefone,LocalDate dataNascimento,String cpf) {
+		public Usuario(){};
+		public Usuario(String nome,String sexo,String endereco,String telefone,LocalDate dataNascimento,String cpf) {
 			this.nome = nome;
 			this.sexo = sexo;
 			this.endereco = endereco;

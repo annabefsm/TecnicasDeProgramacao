@@ -1,6 +1,7 @@
-package sistema.entrega.pecas;
+package model;
 
 public class Produto {
+    private String codigo;
     private String nome;
     private String categoria;
     private int peso;
@@ -10,7 +11,8 @@ public class Produto {
     private String dimensaoComprimento;
     private String dimensaoProfundidade;
     
-    public Produto(String nome, String categoria, int peso, String fabricante, String modelo, String dimensaoAltura, String dimensaoComprimento, String dimensaoProfundidade){
+    public Produto(String codigo, String nome, String categoria, int peso, String fabricante, String modelo, String dimensaoAltura, String dimensaoComprimento, String dimensaoProfundidade){
+        this.codigo = codigo;
         this.nome = nome;
         this.categoria = categoria;
         this.peso = peso;
@@ -19,6 +21,22 @@ public class Produto {
         this.dimensaoAltura = dimensaoAltura;
         this.dimensaoComprimento = dimensaoComprimento;
         this.dimensaoProfundidade = dimensaoProfundidade;
+    }
+    
+
+    
+    /**
+     * @return String return the codigo
+     */
+    public String getCodigo() {
+        return codigo;
+    }
+
+    /**
+     * @param codigo the codigo to set
+     */
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
     /**
@@ -132,8 +150,6 @@ public class Produto {
     public void setDimensaoProfundidade(String dimensaoProfundidade) {
         this.dimensaoProfundidade = dimensaoProfundidade;
     }
-
-
     public void printaProduto() {
         // TODO Auto-generated method stub
         System.out.println("Nome: " + this.nome);
@@ -145,4 +161,6 @@ public class Produto {
         System.out.println("DimensaoComprimento: " + this.dimensaoComprimento);
         System.out.println("DimensaoProfundidade: " + this.dimensaoProfundidade);
     }
+
+
 }
