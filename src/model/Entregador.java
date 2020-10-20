@@ -6,16 +6,15 @@ public class Entregador extends Usuario{
 	private int identificacao;
 
 	public Entregador(
-		String nome,
-		String sexo,
-		String endereco,
-		String telefone,
-		LocalDate dataNascimento,
-		String cpf, 
+		String _nome,
+		String _sexo,
+		String _endereco,
+		String _telefone,
+		LocalDate _dataNascimento,
+		String _cpf, 
 		int identificacao
 	){
-		super(nome,sexo,endereco,telefone, dataNascimento, cpf);
-		this.cpf = cpf;
+		super( _nome, _sexo, _endereco, _telefone, _dataNascimento, _cpf);
 		this.identificacao = identificacao;	
 	}
 

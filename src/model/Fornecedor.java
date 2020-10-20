@@ -1,15 +1,18 @@
 package model;
 
 public class Fornecedor {
-	public Fornecedor() {
-		super();
-
 	
-	}
 	private String cnpj;
 	private String nomeEmpresa;
 	private String endereco;
 	private String telefone;
+	
+	public Fornecedor(String cnpj, String nomeEmpresa, String endereco, String telefone) {
+		this.cnpj = cnpj;
+		this.nomeEmpresa = nomeEmpresa;
+		this.endereco = endereco;
+		this.telefone = telefone;
+	}
 	
 	public String getCnpj() {
 		return cnpj;
