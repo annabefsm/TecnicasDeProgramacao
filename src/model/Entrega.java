@@ -1,4 +1,4 @@
-package io.github.jiangdequan;
+package model;
 
 public class Entrega {
     private String enderecoA;
