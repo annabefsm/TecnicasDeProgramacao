@@ -67,3 +67,35 @@ public class Usuario {
 			System.out.println(" \n");
 		}
 }
+//update
+public class principal {
+	public static void main (String[]args) {
+		Entregador entregador= new Entregador();
+		entregador= setarDadosEntregador();
+		entregador= printarEntregador();
+		
+	}
+	public static Entregador setarDadosEntregador() {
+		Entregador entregador= new Entregador();
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Digite o nome do entregador:");
+		entregador.setNome(scan.nextLine());
+		System.out.println("Digite um endereço:");
+		entregador.setEndereco(scan.next());
+		System.out.println("Digite o telefone:");
+		entregador.setTelefone(scan.next());
+		System.out.println(" \n");
+		return entregador;
+	}
+	public static Entregador printarEntregador() {
+		// TODO Auto-generated method stub
+		Entregador entregador= new Entregador();
+		System.out.println("Os dados do entregador são:");
+		System.out.println("Nome: " +entregador.getNome());
+		System.out.println("Endereço:" +entregador.getEndereco());
+		System.out.println("Telefone: " +entregador.getTelefone());
+		System.out.println(" \n");
+		return entregador;
+	}
+}
+
